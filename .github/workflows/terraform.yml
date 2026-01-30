@@ -10,10 +10,9 @@ jobs:
     name: Terraform
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: terraform   # remove if Terraform is in repo root
-
+    # defaults:
+    #   run:
+    #     working-directory: terraform   # remove if Terraform is in repo root
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
